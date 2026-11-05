@@ -56,97 +56,33 @@ a { color: inherit; }
 .navbar a:not(.logo):hover { color: var(--primary); }
 
 .hero {
-    min-height: 84vh;
+    min-height: 86vh;
     display: flex;
     align-items: center;
     padding: 6rem 10%;
     position: relative;
     overflow: hidden;
+    isolation: isolate;
+    background-color: #080f1d;
+    /* Colocá la foto del Hero en image/hero.jpg */
+    background-image:
+        linear-gradient(90deg,
+            rgba(8, 15, 29, .99) 0%,
+            rgba(8, 15, 29, .94) 32%,
+            rgba(8, 15, 29, .72) 49%,
+            rgba(8, 15, 29, .18) 72%,
+            rgba(8, 15, 29, .08) 100%),
+        linear-gradient(0deg, rgba(8, 15, 29, .45), transparent 28%, transparent 78%, rgba(8, 15, 29, .12)),
+        url("../image/hero.jpg");
+    background-size: cover;
+    background-position: center 42%;
 }
-.hero-content { max-width: 760px; position: relative; z-index: 1; }
-.hero-glow {
-    position: absolute;
-    width: 440px;
-    height: 440px;
-    right: 12%;
-    top: 15%;
-    border-radius: 50%;
-    background: rgba(37, 99, 235, .13);
-    filter: blur(100px);
-}
-.tag {
-    display: inline-flex;
-    align-items: center;
-    gap: .6rem;
-    background: rgba(59, 130, 246, .12);
-    border: 1px solid rgba(96, 165, 250, .25);
-    color: #bfdbfe;
-    padding: .45rem .9rem;
-    border-radius: 30px;
-    margin-bottom: 1.7rem;
-    font-size: .85rem;
-}
-.status-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #4ade80;
-    box-shadow: 0 0 10px rgba(74, 222, 128, .65);
-}
-.eyebrow {
-    color: var(--primary);
-    font-size: .78rem;
-    font-weight: 700;
-    letter-spacing: .18em;
-    margin-bottom: .55rem;
-}
-.hero h1 {
-    font-size: clamp(2.8rem, 6vw, 4.7rem);
-    line-height: 1.12;
-    letter-spacing: -.055em;
-}
-.hero h1 span {
-    color: var(--primary);
-    display: block;
-}
-.hero h2 {
-    color: #cbd5e1;
-    font-size: clamp(1.1rem, 2vw, 1.45rem);
-    font-weight: 500;
-    margin: 1.2rem 0;
-}
-.hero-description {
-    color: var(--text-soft);
+.hero-content {
     max-width: 650px;
-    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .28);
 }
-.buttons { display: flex; flex-wrap: wrap; gap: 1rem; }
-.btn-primary, .btn-secondary {
-    text-decoration: none;
-    padding: .85rem 1.3rem;
-    border-radius: 10px;
-    font-weight: 650;
-    transition: transform .25s ease, background .25s ease, border-color .25s ease;
-}
-.btn-primary {
-    background: linear-gradient(135deg, var(--primary-strong), #2563eb);
-    color: white;
-    box-shadow: 0 8px 25px rgba(37, 99, 235, .22);
-}
-.btn-secondary { border: 1px solid var(--border); color: var(--text); background: rgba(255,255,255,.02); }
-.btn-primary:hover, .btn-secondary:hover { transform: translateY(-3px); }
-.btn-secondary:hover { border-color: var(--primary); }
-.hero-decoration {
-    position: absolute;
-    right: 13%;
-    top: 32%;
-    font-size: clamp(4rem, 10vw, 8rem);
-    font-weight: 800;
-    letter-spacing: -.18em;
-    color: rgba(96, 165, 250, .10);
-    user-select: none;
-}
-.hero-decoration span:nth-child(2) { color: rgba(96, 165, 250, .24); }
 
 .section {
     max-width: 1240px;
@@ -300,8 +236,15 @@ footer span { color: var(--primary); padding: 0 .3rem; }
     .navbar { flex-direction: column; gap: .8rem; }
     .navbar ul { flex-wrap: wrap; justify-content: center; gap: .65rem 1rem; }
     .navbar a:not(.logo) { font-size: .86rem; }
-    .hero { min-height: 75vh; padding: 5rem 7%; }
-    .hero-decoration { display: none; }
+    .hero {
+        min-height: 78vh;
+        padding: 5rem 7%;
+        background-position: 62% center;
+        background-image:
+            linear-gradient(90deg, rgba(8, 15, 29, .97) 0%, rgba(8, 15, 29, .86) 48%, rgba(8, 15, 29, .48) 100%),
+            linear-gradient(0deg, rgba(8, 15, 29, .55), transparent 45%),
+            url("../image/hero.jpg");
+    }
     .section { padding: 4rem 1.2rem; }
     .about-card, .timeline { grid-template-columns: 1fr; }
     .about-image { min-height: 260px; }
