@@ -73,7 +73,7 @@ a { color: inherit; }
             rgba(8, 15, 29, .18) 72%,
             rgba(8, 15, 29, .08) 100%),
         linear-gradient(0deg, rgba(8, 15, 29, .45), transparent 28%, transparent 78%, rgba(8, 15, 29, .12)),
-        url("../image/hero.jpg");
+        url(../image/hero.jpg);
     background-size: cover;
     background-position: center 42%;
 }
