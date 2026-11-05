@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Sebastián Mendoza, estudiante de Gestión de Tecnologías de la Información.">
     <title>Sebastián Mendoza | Portfolio</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <header>
         <nav class="navbar">
-            <h2>Seba.</h2>
-
+            <a class="logo" href="#inicio">Seba<span>.</span></a>
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#skills">Tecnologías</a></li>
@@ -25,199 +21,167 @@
         </nav>
     </header>
 
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <span class="tag">Disponible para oportunidades IT</span>
-
-            <h1>
-                Sebastián Mendoza
-            </h1>
-
-            <h2>
-                Estudiante de Gestión de Tecnologías de la Información
-            </h2>
-
-            <p>
-                Desarrollo web, ingeniería de software, bases de datos y soporte técnico.
-                Actualmente cursando materias avanzadas en UNPAZ y desarrollando
-                proyectos para seguir creciendo profesionalmente.
-            </p>
-
-            <div class="buttons">
-                <a href="#proyectos" class="btn-primary">
-                    Ver proyectos
-                </a>
-
-                <a href="https://www.linkedin.com/in/sebastianmendoza-5504b42a7" target="_blank" class="btn-secondary">
-                    LinkedIn
-                </a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="sobre-mi" class="section">
-
-        <h2>Sobre mí</h2>
-
-        <p>
-            Soy estudiante de la Licenciatura en Gestión de Tecnologías de la Información.
-            Mi formación combina programación, bases de datos, sistemas operativos,
-            redes e ingeniería de software.
-        </p>
-
-        <p>
-            Me gusta comprender cómo funcionan las soluciones tecnológicas por dentro,
-            aplicar buenas prácticas de diseño y seguir aprendiendo constantemente.
-        </p>
-
-    </section>
-
-    <section id="skills" class="section">
-
-        <h2>Tecnologías y herramientas</h2>
-
-        <div class="skills">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Bootstrap</span>
-            <span>SQL</span>
-            <span>MySQL</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>UML</span>
-            <span>POO</span>
-            <span>Testing</span>
-            <span>Patrones de Diseño</span>
-
-        </div>
-
-    </section>
-
-    <section id="formacion" class="section">
-
-        <h2>Formación Académica</h2>
-
-        <div class="timeline">
-
-            <div class="card">
-                <h3>UNPAZ</h3>
-                <p>Licenciatura en Gestión de Tecnologías de la Información</p>
-            </div>
-
-            <div class="card">
-                <h3>Materias destacadas</h3>
-
-                <ul>
-                    <li>Algoritmos y Programación</li>
-                    <li>Programación Orientada a Objetos</li>
-                    <li>Ingeniería de Software I</li>
-                    <li>Base de Datos I</li>
-                    <li>Comunicaciones y Redes</li>
-                    <li>Sistemas Operativos I y II</li>
-                </ul>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="proyectos" class="section">
-
-        <h2>Proyectos</h2>
-
-        <div class="project-grid">
-
-            <div class="project-card">
-                <h3>Concesionaria</h3>
-
-                <p>
-                    Proyecto realizado para aprobar Argentina Programa 4.0.
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <span class="tag"><span class="status-dot"></span> Disponible para oportunidades IT</span>
+                <p class="eyebrow">HOLA, SOY</p>
+                <h1>Sebastián <span>Mendoza</span></h1>
+                <h2>Estudiante de Gestión de Tecnologías de la Información</h2>
+                <p class="hero-description">
+                    Desarrollo web, ingeniería de software, bases de datos y soporte técnico.
+                    Actualmente curso materias avanzadas en UNPAZ y desarrollo proyectos
+                    para seguir creciendo profesionalmente.
                 </p>
-
-                <small>HTML • CSS • JS • Bootstrap</small>
-
-                <a href="https://concesionaria-grupo-08.netlify.app" target="_blank">
-                    Ver proyecto →
-                </a>
+                <div class="buttons">
+                    <a href="#proyectos" class="btn-primary">Ver proyectos <span>↗</span></a>
+                    <a href="https://www.linkedin.com/in/sebastianmendoza-5504b42a7" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn ↗</a>
+                </div>
             </div>
-
-            <div class="project-card">
-                <h3>Alquiler de Cabañas</h3>
-
-                <p>
-                    Sitio para promoción y presentación de cabañas turísticas.
-                </p>
-
-                <small>HTML • CSS • JS</small>
-
-                <a href="https://alquiler-c-agustin.netlify.app" target="_blank">
-                    Ver proyecto →
-                </a>
+            <div class="hero-decoration" aria-hidden="true">
+                <span>&lt;</span><span>/</span><span>&gt;</span>
             </div>
+        </section>
 
-            <div class="project-card">
-                <h3>Centro de Estudiantes</h3>
-
-                <p>
-                    Portal institucional orientado a la comunicación estudiantil.
-                </p>
-
-                <small>HTML • CSS • JS</small>
-
-                <a href="https://clementina-unpaz.netlify.app" target="_blank">
-                    Ver proyecto →
-                </a>
+        <section id="sobre-mi" class="section about-section">
+            <div class="section-heading">
+                <p class="eyebrow">CONOCEME UN POCO</p>
+                <h2>Sobre mí</h2>
             </div>
-
-            <div class="project-card">
-                <h3>Tienda de Juegos</h3>
-
-                <p>
-                    Proyecto de práctica enfocado en diseño frontend y ecommerce.
-                </p>
-
-                <small>HTML • CSS • JS</small>
-
-                <a href="https://chipper-biscochitos-74c712.netlify.app" target="_blank">
-                    Ver proyecto →
-                </a>
+            <div class="about-card">
+                <!-- Cuando tengas tu imagen, agregá su ruta en --about-image dentro de css/style.css -->
+                <div class="about-image" role="img" aria-label="Espacio reservado para una imagen personal o tecnológica"></div>
+                <div class="about-content">
+                    <span class="about-label">UN POCO SOBRE MI CAMINO</span>
+                    <h3>Tecnología, aprendizaje y ganas de crecer.</h3>
+                    <p>
+                        Soy estudiante de la Licenciatura en Gestión de Tecnologías de la
+                        Información. Mi formación combina programación, bases de datos,
+                        sistemas operativos, redes e ingeniería de software.
+                    </p>
+                    <p>
+                        Me interesa comprender cómo funcionan las soluciones tecnológicas
+                        por dentro, aplicar buenas prácticas de diseño y transformar lo
+                        aprendido en proyectos concretos.
+                    </p>
+                    <p>
+                        Este portfolio reúne parte de ese recorrido y los proyectos que
+                        fui construyendo durante mi formación.
+                    </p>
+                </div>
             </div>
+        </section>
 
-        </div>
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">HERRAMIENTAS</p>
+                <h2>Tecnologías y herramientas</h2>
+            </div>
+            <div class="skills">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                <span>SQL</span><span>MySQL</span><span>Git</span><span>GitHub</span>
+                <span>UML</span><span>POO</span><span>Testing</span><span>Patrones de Diseño</span>
+            </div>
+        </section>
 
-    </section>
+        <section id="formacion" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">MI RECORRIDO</p>
+                <h2>Formación académica</h2>
+            </div>
+            <div class="timeline">
+                <div class="card">
+                    <span class="card-kicker">UNIVERSIDAD</span>
+                    <h3>UNPAZ</h3>
+                    <p>Licenciatura en Gestión de Tecnologías de la Información</p>
+                </div>
+                <div class="card">
+                    <span class="card-kicker">CONTENIDOS DESTACADOS</span>
+                    <h3>Materias destacadas</h3>
+                    <ul class="subject-list">
+                        <li>Algoritmos y Programación</li>
+                        <li>Programación Orientada a Objetos</li>
+                        <li>Ingeniería de Software I</li>
+                        <li>Base de Datos I</li>
+                        <li>Comunicaciones y Redes</li>
+                        <li>Sistemas Operativos I y II</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="contacto" class="section">
+        <section id="proyectos" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">ALGUNOS TRABAJOS</p>
+                <h2>Proyectos</h2>
+                <p class="section-description">Una selección de proyectos en los que fui aplicando lo aprendido.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card" style="--project-image: none;">
+                    <div class="project-overlay">
+                        <span class="project-number">01 / PROYECTO</span>
+                        <div class="project-info">
+                            <h3>Concesionaria</h3>
+                            <p>Proyecto realizado para aprobar Argentina Programa 4.0.</p>
+                            <small>HTML <i>•</i> CSS <i>•</i> JS <i>•</i> Bootstrap</small>
+                            <a href="https://concesionaria-grupo-08.netlify.app" target="_blank" rel="noopener noreferrer">Ver proyecto <span>↗</span></a>
+                        </div>
+                    </div>
+                </article>
 
-        <h2>Contacto</h2>
+                <article class="project-card" style="--project-image: none;">
+                    <div class="project-overlay">
+                        <span class="project-number">02 / PROYECTO</span>
+                        <div class="project-info">
+                            <h3>Alquiler de Cabañas</h3>
+                            <p>Sitio para promoción y presentación de cabañas turísticas.</p>
+                            <small>HTML <i>•</i> CSS <i>•</i> JS</small>
+                            <a href="https://alquiler-c-agustin.netlify.app" target="_blank" rel="noopener noreferrer">Ver proyecto <span>↗</span></a>
+                        </div>
+                    </div>
+                </article>
 
-        <div class="contact-box">
+                <article class="project-card" style="--project-image: none;">
+                    <div class="project-overlay">
+                        <span class="project-number">03 / PROYECTO</span>
+                        <div class="project-info">
+                            <h3>Centro de Estudiantes</h3>
+                            <p>Portal institucional orientado a la comunicación estudiantil.</p>
+                            <small>HTML <i>•</i> CSS <i>•</i> JS</small>
+                            <a href="https://clementina-unpaz.netlify.app" target="_blank" rel="noopener noreferrer">Ver proyecto <span>↗</span></a>
+                        </div>
+                    </div>
+                </article>
 
-            <p>📧 mendozasa1990@gmail.com</p>
+                <article class="project-card" style="--project-image: none;">
+                    <div class="project-overlay">
+                        <span class="project-number">04 / PROYECTO</span>
+                        <div class="project-info">
+                            <h3>Tienda de Juegos</h3>
+                            <p>Proyecto de práctica enfocado en diseño frontend y ecommerce.</p>
+                            <small>HTML <i>•</i> CSS <i>•</i> JS</small>
+                            <a href="https://chipper-biscochitos-74c712.netlify.app" target="_blank" rel="noopener noreferrer">Ver proyecto <span>↗</span></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            <p>
-                💼
-                <a href="https://www.linkedin.com/in/sebastianmendoza-5504b42a7" target="_blank">
-                    LinkedIn
-                </a>
-            </p>
+        <section id="contacto" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">HABLEMOS</p>
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-box">
+                <p>¿Tenés una propuesta o querés conectar? ¡Estoy a disposición!</p>
+                <a href="mailto:mendozasa1990@gmail.com">✉ mendozasa1990@gmail.com</a>
+                <a href="https://www.linkedin.com/in/sebastianmendoza-5504b42a7" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+        </section>
+    </main>
 
-        </div>
-
-    </section>
-
-    <footer>
-        <p>© 2026 Sebastián Mendoza</p>
-    </footer>
-
+    <footer><p>© 2026 Sebastián Mendoza <span>•</span> Portfolio personal</p></footer>
     <script src="script/script.js"></script>
-
 </body>
-
 </html>
